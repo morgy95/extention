@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-request/1.0.6/d3-request.js" integrity="sha512-nfqwXjqNfyO8glmAIXmnbZgTHTL7ry/L9nSuuqOM817l5WA9TAiw2ApgMb/rwZ39O8vO2qJGVsLmGaRtCKrObA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <section id="Circui">
+        <div class="logo">
+            <img src="images/deployment-pattern.png" alt="">
+            <h1>CircuitStation</h1>
+        </div>
+        <form action="http://172.29.5.154:3008/" method="GET">
+            <div class="circuitname">
+                <input type="text" name="circuitname" placeholder="circuit name" required>
+            </div>
+    
+            <div class="chexBoxs">
+    
+            <div class="chexbox">
+                <div class="checkbox-wrapper-31">
+                    <input type="checkbox"/>
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                    </div>
+                <label for="text">Passed</label>
+            </div> 
+            <div class="chexbox">
+                <div class="checkbox-wrapper-31">
+                    <input type="checkbox"/>
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                    </div>
+                <label for="text">Testé</label>
+            </div>
+            <div class="chexbox">
+                <div class="checkbox-wrapper-31">
+                    <input type="checkbox"/>
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                    </div>
+                <label for="text">A testé</label>
+            </div>
+            <div class="chexbox">
+                <div class="checkbox-wrapper-31">
+                    <input type="checkbox"/>
+                    <svg viewBox="0 0 35.6 35.6">
+                        <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                        <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                        <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+                    </svg>
+                    </div>
+                <label for="text">Décomission</label>
+            </div>
+    
+            </div>
+
+            <div style="display: none;" class="makedInput">
+            <input name="etatCircuit" type="text">
+            <input name="datePose" type="text">
+            <input name="dateTest" type="text">
+            <input name="decommission" type="text">
+            <input name="siteCircuit" type="text">
+            </div>
+        
+            <button id="btnSumbit" class="button-35" role="button">Soumettre</button>
+        </form>
+
+        <div class="blockReturnPage">
+            <button class="btnNav" id="dashboardLink" type="submit"><img src="images/iconBlockReturnPage/house.png" alt=""></button>
+            <button class="btnNav" id="CircuitLink" type="submit"></button>
+            <button class="btnNav" type="submit"><img src="" alt=""></button>
+        </div>
+
+    </section>
+
+    <script type="module" src="script/scriptNavModule.js"></script>
+    <script type="module" src="script/services-worker.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "CircuitStation",
+    "version": "0.0.0.1",
+    "description": "Recuperation de code",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "all/index.html",
+        "default_icon": {
+            "16": "icons/deployment-pattern.png",
+            "48": "icons/deployment-pattern.png",
+            "128": "icons/deployment-pattern.png"
+        }
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            }
+        }
+    },
+    "icons": {
+        "16": "icons/deployment-pattern.png",
+        "48": "icons/deployment-pattern.png",
+        "128": "icons/deployment-pattern.png"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://cdnjs.cloudflare.com; object-src 'self'"
+}
